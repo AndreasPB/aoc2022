@@ -52,15 +52,15 @@ func partTwo(file *os.File) int {
 	scanner := bufio.NewScanner(file)
 
 	const (
-		Winning = "Z"
-		Drawing = "Y"
-		Losing  = "X"
+		Winning string = "Z"
+		Drawing        = "Y"
+		Losing         = "X"
 	)
 
 	const (
-		Rock     = "A" // 1 point
-		Paper    = "B" // 2 points
-		Scissors = "C" // 3 points
+		Rock     string = "A" // 1 point
+		Paper           = "B" // 2 points
+		Scissors        = "C" // 3 points
 	)
 
 	points := 0
